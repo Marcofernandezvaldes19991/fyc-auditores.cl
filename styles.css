@@ -201,3 +201,29 @@ button,input,textarea{font:inherit}
   html{scroll-behavior:auto}
   *{transition:none!important}
 }
+
+
+/* Navegación multipágina */
+.main-nav a.active{color:var(--copper-dark)}
+.main-nav a.active:after{right:0}
+.page-hero{padding:95px 0 86px;background:linear-gradient(115deg,#071c2b,#123c55);color:white}
+.page-hero .container{max-width:1180px}
+.page-hero h1{font-family:var(--serif);font-size:clamp(38px,5vw,66px);line-height:1.08;max-width:940px;font-weight:500;letter-spacing:-1.1px;margin:0 0 24px}
+.page-hero .hero-lead{max-width:800px;margin:0;font-size:19px}
+.multipage-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:0}
+.multipage-grid .service-card{min-height:245px}
+.multipage-grid .service-card:nth-child(3n){border-right:0}
+.check-list{padding-left:24px;line-height:1.85}
+.check-list li{margin-bottom:8px}
+.prose-panel{background:#f7f8f8;border:1px solid #dfe5e8;padding:32px 36px;max-width:960px}
+.prose-panel h3,.info-band h3{font-family:var(--serif);font-size:27px;font-weight:500;margin:0 0 12px}
+.prose-panel p{margin:12px 0}
+.info-band{border-left:4px solid var(--copper);padding:22px 28px;background:#f7f8f8}
+.small-note{font-size:14px;color:var(--slate-700);margin-top:24px}
+.anchor-target{scroll-margin-top:95px}
+.contact-card.light{background:#f7f8f8;color:var(--navy-900);border-color:var(--line);max-width:670px}
+.contact-card.light p{color:var(--slate-700)}
+.contact-card.light .contact-label{color:var(--slate-700)}
+.contact-card.light .contact-email{font-size:clamp(20px,4vw,31px)}
+@media(max-width:1000px){.main-nav{gap:10px;font-size:12px}.multipage-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.multipage-grid .service-card:nth-child(3n){border-right:1px solid var(--line)}.multipage-grid .service-card:nth-child(2n){border-right:0}}
+@media(max-width:760px){.page-hero{padding:70px 0}.page-hero .hero-lead{font-size:16px}.multipage-grid{grid-template-columns:1fr}.multipage-grid .service-card,.multipage-grid .service-card:nth-child(3n){border-right:0}.prose-panel{padding:22px}.brand-copy{display:flex}.brand-copy strong{font-size:13px}.brand-copy small{font-size:8px;letter-spacing:1px}.brand-mark{font-size:25px}}
