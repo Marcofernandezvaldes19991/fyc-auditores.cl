@@ -24,6 +24,6 @@ if (enquiry) enquiry.addEventListener('submit', event => {
   if (!enquiry.reportValidity()) return;
   const v = key => enquiry.elements.namedItem(key)?.value?.trim() || '';
   const subject = 'Consulta web - ' + (v('servicio') || 'Servicios profesionales');
-  const body = ['Nombre: '+v('nombre'),'Empresa: '+v('empresa'),'Correo: '+v('email'),'Teléfono: '+v('telefono'),'Servicio: '+v('servicio'),'Mensaje:',v('mensaje')].join('\\n');
+  const body = ['Nombre: '+v('nombre'),'Empresa: '+v('empresa'),'Correo: '+v('email'),'Teléfono: '+v('telefono'),'Servicio: '+v('servicio'),'Mensaje:',v('mensaje')].join(String.fromCharCode(10));
   window.location.href = 'mailto:contacto@fyc-auditores.cl?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);
 });
