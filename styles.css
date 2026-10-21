@@ -332,3 +332,12 @@ body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,
 
 /* Menú colapsado en tablet y portátiles estrechos */
 @media (min-width:761px) and (max-width:1120px){.site-header .desktop-cta{display:none}.site-header .nav-toggle{display:block}.site-header .main-nav{display:none;position:absolute;top:82px;left:20px;right:20px;flex-direction:column;align-items:stretch;gap:0;padding:12px;background:#071d2d;border:1px solid #284457;box-shadow:0 18px 45px rgba(0,0,0,.2)}.site-header .main-nav.open{display:flex}.site-header .main-nav a{padding:13px 15px;border-bottom:1px solid #284457}.site-header .main-nav a:after{display:none}}
+
+/* Logotipo corporativo oficial (SVG vectorial) */
+.site-header .brand,.footer .brand{gap:0;min-width:0;max-width:100%;flex-shrink:0}
+.site-header .nav-wrap{gap:clamp(14px,1.3vw,24px)}
+.brand-logo{display:block;width:360px;max-width:100%;height:auto;object-fit:contain}
+.site-header .brand-logo{width:clamp(270px,23vw,390px)}
+.footer .brand-logo{width:min(100%,350px)}
+@media(max-width:1340px) and (min-width:1121px){.site-header .brand-logo{width:300px}.site-header .main-nav{gap:10px}.site-header .desktop-cta{padding:10px 12px;font-size:12px}}
+@media(max-width:760px){.site-header .brand-logo{width:clamp(225px,60vw,285px)}.footer .brand-logo{width:min(100%,320px)}}
